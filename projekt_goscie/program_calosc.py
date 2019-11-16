@@ -67,3 +67,4 @@ if __name__ == '__main__':
 
     with open(f'{nazwa_pliku}.json', mode='w', encoding='utf-8') as plik:
         plik.write(json.dumps(export_danych))
+

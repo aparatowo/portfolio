@@ -1,7 +1,7 @@
 #Projekt goście
 ##Rafał Nitychoruk, 09.11.2019r.
 ###Środowisko
-Python 3.7, kodowanie UTF-8, wykorzystane moduły: math, random, json, 
+Python 3.7, kodowanie UTF-8, wykorzystane moduły: math, random, json i copy
 
 ###Założenia programu
 Program ma za zadanie przyjąć listę gosci weselnych i przetworzyć tak, by uzyskać jak największe zadowolenie wszystkich zaproszonych.

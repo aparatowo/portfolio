@@ -1,4 +1,5 @@
 from math import ceil
+import copy
 
 
 class Gosc:
@@ -45,6 +46,8 @@ class Stol:
                 if g.prosba_nie:
                     if gosc.nazwisko in g.prosba_nie:
                         return False
+                    # elif g in self.lista_stol:
+                    #     return False
             return True
         else:
             return False
@@ -58,6 +61,7 @@ class Stol:
     def __repr__(self):
         return f'Stół o składzie gości: {self.lista_stol}'
 
+
 def wybor_singla(lista_zrodlowa):
     starsi = []
     single = []
@@ -70,6 +74,7 @@ def wybor_singla(lista_zrodlowa):
         else:
             pary.append(g)
     return starsi, single, pary
+
 
 def ile_dzieci(lista_zrodlowa):
     liczba_dzieci = 0
@@ -91,10 +96,11 @@ def podliczenie_gosci(wskazana_lista):
 
 
 def wybor_do_stolu(lista_bazowa, miejsc_przy_stole):
-    potrzebne_stoly = ceil(podliczenie_gosci(lista_bazowa) / miejsc_przy_stole)
+    # potrzebne_stoly = ceil(podliczenie_gosci(lista_bazowa) / miejsc_przy_stole)
+    potrzebne_stoly = ceil(len(lista_bazowa) / miejsc_przy_stole)
     lista_stolow = []
-    for _ in range(potrzebne_stoly + 1):
-        lista_stolow.append(Stol(miejsc_przy_stole))
+    for s in range(potrzebne_stoly):
+        lista_stolow.append(copy.deepcopy(Stol(miejsc_przy_stole)))
 
     for g in lista_bazowa:
         for s in lista_stolow:
@@ -103,6 +109,7 @@ def wybor_do_stolu(lista_bazowa, miejsc_przy_stole):
                 break
 
     return lista_stolow
+
 
 def stoly_do_listy(zadana_lista_stolow):
     ostateczna_lista_stolow = []
