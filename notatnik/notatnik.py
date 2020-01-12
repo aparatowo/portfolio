@@ -65,25 +65,3 @@ class Notatnik:
         else:
             szablon = f'Notatnik nie zawiera notatek'
         return szablon
-#
-# notatka1 = Notatnik()
-#
-# notatka1.nowa_notatka()
-#
-# notatka1.listuj_notatki()
-# print(f'Lista ma {notatka1.ile_notatek()} notatek')
-# notatka1.nowa_notatka('tytul', 'wpis')
-# print(notatka1)
-# print()
-# print('przed usunięciem')
-# notatka1.listuj_notatki()
-# print(f'Lista ma {notatka1.ile_notatek()} notatek')
-# print(notatka1)
-# print()
-# notatka1.kasuj_notatke('tytul')
-# print()
-# print('po usunięciu')
-# notatka1.listuj_notatki()
-# print(f'Lista ma {notatka1.ile_notatek()} notatek')
-# print(notatka1)
-#

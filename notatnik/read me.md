@@ -10,6 +10,11 @@ Program ma przyjmować i zwracać notatki, a także umożliwiać ich zapis i odc
 ###Uruchomienie programu
 Program nie wymaga istniejących plików z notatkami.
 
+###Rozwój
+W planach wprowadzenie szyfrowania plików, logowania użytkowników i wysyłania maili.
+Kolejną opcją będzie możliwość czytania notatek z plików txt.
+Rozbudowane zostaną także opcje edycji notatek.
+
 ###Uwagi
 Program nadpisze obecne notatki po skutecznym skorzystaniu z funkji otwórz.
 Program nadpisze też notatki w pliku, po skorzystaniu z funkcji zapisz, jeśli tylko nazwy plików wię pokryją.

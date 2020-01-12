@@ -1,6 +1,5 @@
 from random import choice, randint
 import pickle
-from string import ascii_lowercase, ascii_letters, punctuation
 from datetime import datetime
 from notatnik import Notatnik
 
@@ -91,15 +90,12 @@ def utworz_czytaj(wskazany_notatnik):
         print('Nie rozumiem, spróbuj ponownie.')
 
     print()
-    # wybor = input('Twój wybór?')
-
 
 def otwieranie(wskazany_notatnik):
     wskazany_plik = input(
         "Podaj nazwę pliku. Plik musi znajdować się w katalogu 'users' wewnątrz katalogu z programem.")
     wskazany_plik = wskazany_plik.strip() + ".txt"
 
-    # To miejsce musi rzucać wyjątki
     try:
         with open(wskazany_plik, 'rb') as plik:
             wskazany_notatnik.notatki = pickle.loads(plik.read())
@@ -119,31 +115,6 @@ def zapisywanie(wskazany_notatnik):
     wekowany_notatnik = pickle.dumps(wskazany_notatnik.notatki)
     with open(wskazany_plik, 'wb') as plik:
         plik.write(wekowany_notatnik)
-
-
-def generuj_haslo(poziom_trudnosci_hasla=0, dlugosc_hasla=8):
-    dostepne_znaki = []
-    losowe_znaki = []
-
-    if poziom_trudnosci_hasla == 0:
-        dostepne_znaki = ascii_lowercase
-    elif poziom_trudnosci_hasla == 1:
-        dostepne_znaki = ascii_letters
-    elif poziom_trudnosci_hasla == 2:
-        dostepne_znaki = ascii_letters + '0123456789'
-    elif poziom_trudnosci_hasla == 3:
-        dostepne_znaki = ascii_letters + '0123456789' + punctuation
-
-    for _ in range(dlugosc_hasla):
-        losowy_znak = choice(dostepne_znaki)
-        losowe_znaki.append(losowy_znak)
-
-    losowe_haslo = ''
-    losowe_haslo = losowe_haslo.join(losowe_znaki)
-    # for znak in losowe_znaki:
-    #     losowe_haslo = losowe_haslo + znak
-    print('Twoje losowe hasło o długości {} znaków to {}.'.format(dlugosc_hasla, losowe_haslo))
-    return losowe_haslo
 
 def error_happens():
     pick = randint(1, 2)
