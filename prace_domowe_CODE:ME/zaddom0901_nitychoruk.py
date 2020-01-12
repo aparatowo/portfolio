@@ -25,7 +25,7 @@ def generuj_haslo(poziom_trudnosci_hasla=0, dlugosc_hasla=8):
     # for znak in losowe_znaki:
     #     losowe_haslo = losowe_haslo + znak
     print('Twoje losowe hasło o długości {} znaków to {}.'.format(dlugosc_hasla, losowe_haslo))
-
+    return losowe_haslo
 
 trudnosc = None
 ilosc_znakow = None
@@ -40,4 +40,6 @@ while ilosc_znakow == None:
     if podaj_ilosc_znakow.isdigit():
         ilosc_znakow = int(podaj_ilosc_znakow)
 
-generuj_haslo(trudnosc, ilosc_znakow)
+
+haslo = generuj_haslo(trudnosc, ilosc_znakow)
+print(haslo)
