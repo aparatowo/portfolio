@@ -20,3 +20,5 @@ print('Nieaktywni:')
 for osoba in osoby:
     if osoba['aktywna'] == False:
         print(osoba['imie'])
+
+

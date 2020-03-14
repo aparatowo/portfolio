@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<!--Tutaj pojawić powinien się szablon-->
+
+<h1>Promocyjne produkty</h1>
+<table>
+    <tr>
+        <th>numer</th>
+        <th>produkt</th>
+        <th>cena</th>
+    </tr>
+
+    {% for item in items if item.on_sale==True %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }} zł/{{ item.unit }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
