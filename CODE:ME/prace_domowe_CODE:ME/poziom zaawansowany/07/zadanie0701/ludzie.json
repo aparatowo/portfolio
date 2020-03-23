@@ -1,0 +1,140 @@
+[
+  {
+    "id": 0,
+    "imie": "Paulina",
+    "nazwisko": "Sobczak",
+    "is_admin": false
+  },
+  {
+    "id": 1,
+    "imie": "Henryk",
+    "nazwisko": "B\u0105k",
+    "is_admin": false
+  },
+  {
+    "id": 2,
+    "imie": "Kazimierz",
+    "nazwisko": "G\u00f3rski",
+    "is_admin": false
+  },
+  {
+    "id": 3,
+    "imie": "Irena",
+    "nazwisko": "W\u00f3jcik",
+    "is_admin": false
+  },
+  {
+    "id": 6,
+    "imie": "Ewa",
+    "nazwisko": "Duda",
+    "is_admin": false
+  },
+  {
+    "id": 7,
+    "imie": "Jakub",
+    "nazwisko": "Malinowski",
+    "is_admin": false
+  },
+  {
+    "id": 8,
+    "imie": "Jadwiga",
+    "nazwisko": "Brzezi\u0144ska",
+    "is_admin": false
+  },
+  {
+    "id": 9,
+    "imie": "Roman",
+    "nazwisko": "Sawicki",
+    "is_admin": false
+  },
+  {
+    "id": 10,
+    "imie": "Marcin",
+    "nazwisko": "Szymczak",
+    "is_admin": true
+  },
+  {
+    "id": 12,
+    "imie": "Maciej",
+    "nazwisko": "Szczepa\u0144ski",
+    "is_admin": false
+  },
+  {
+    "id": 13,
+    "imie": "Czes\u0142aw",
+    "nazwisko": "Wr\u00f3bel",
+    "is_admin": false
+  },
+  {
+    "id": 14,
+    "imie": "Gra\u017cyna",
+    "nazwisko": "G\u00f3rska",
+    "is_admin": false
+  },
+  {
+    "id": 15,
+    "imie": "Wanda",
+    "nazwisko": "Krawczyk",
+    "is_admin": true
+  },
+  {
+    "id": 16,
+    "imie": "Renata",
+    "nazwisko": "Urba\u0144ska",
+    "is_admin": true
+  },
+  {
+    "id": 17,
+    "imie": "Wies\u0142awa",
+    "nazwisko": "Tomaszewska",
+    "is_admin": false
+  },
+  {
+    "id": 18,
+    "imie": "Bo\u017cena",
+    "nazwisko": "Baranowska",
+    "is_admin": false
+  },
+  {
+    "id": 19,
+    "imie": "Ewelina",
+    "nazwisko": "Malinowska",
+    "is_admin": true
+  },
+  {
+    "id": 20,
+    "imie": "Anna",
+    "nazwisko": "Krajewska",
+    "is_admin": false
+  },
+  {
+    "id": 21,
+    "imie": "Mieczys\u0142aw",
+    "nazwisko": "Zaj\u0105c",
+    "is_admin": false
+  },
+  {
+    "id": 22,
+    "imie": "Wies\u0142aw",
+    "nazwisko": "Przybylski",
+    "is_admin": true
+  },
+  {
+    "id": 23,
+    "imie": "Dorota",
+    "nazwisko": "Tomaszewska",
+    "is_admin": true
+  },
+  {
+    "id": 25,
+    "imie": "Magdalena",
+    "nazwisko": "Adamczyk",
+    "is_admin": false
+  },
+  {
+    "id": 30,
+    "imie": "W\u0142adys\u0142aw",
+    "nazwisko": "Piotrowski",
+    "is_admin": false
+  }
+]
