@@ -12,7 +12,7 @@ def index():
         },
         {
             'author': {'username': 'Malkovich'},
-            'body': 'I would like to C a movie...'
+            'body': 'I would like to C that movie...'
         },
         {
             'author': {'username': 'Travolta'},

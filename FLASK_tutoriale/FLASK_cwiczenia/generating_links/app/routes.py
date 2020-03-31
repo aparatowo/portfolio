@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for
 from app import app
-from app.forms import LoginForm
+from .forms import LoginForm
 
 
 @app.route('/')
@@ -14,7 +14,7 @@ def index():
         },
         {
             'author': {'username': 'Malkovich'},
-            'body': 'I would like to C a movie...'
+            'body': 'I would like to C that movie...'
         },
         {
             'author': {'username': 'Travolta'},
