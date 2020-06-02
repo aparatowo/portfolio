@@ -17,7 +17,7 @@ def index():
             json.dump(all_numbers, numbers_database)
     num_list_len = len(all_numbers)
 
-    return render_template('index.html', all_numbers=num_list_len)
+    return render_template('index.html', all_numbers=all_numbers, num_list_len=num_list_len)
 
 
 @app.route('/add', methods=['post'])
@@ -32,16 +32,17 @@ def add_number():
     return f'Liczba {number} dodana!'
 
 
-@app.route('/numbers/<data>', methods=['get'])
-def print_numbers(data):
-    if data == 'DSC':
-        data = True
-    else:
-        data = False
+@app.route('/numbers/', methods=['get'])
+def print_numbers():
+    data = request.args.get('data')
 
     with open('database.json', mode='r') as numbers_database:
         whole_data = json.load(numbers_database)
-    whole_data.sort(reverse=data)
+
+    if data == 'DSC':
+        whole_data.sort(reverse=True)
+    elif data == 'ASC':
+        whole_data.sort(reverse=False)
 
     return f'{whole_data}'
 

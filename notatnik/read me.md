@@ -14,9 +14,13 @@ Program nie wymaga istniejących plików z notatkami.
 W planach wprowadzenie szyfrowania plików, logowania użytkowników i wysyłania maili.
 Kolejną opcją będzie możliwość czytania notatek z plików txt.
 Rozbudowane zostaną także opcje edycji notatek.
+Całość zostanie przeniesiona na bazę danych.
 
 ###Uwagi
 Program nadpisze obecne notatki po skutecznym skorzystaniu z funkji otwórz.
-Program nadpisze też notatki w pliku, po skorzystaniu z funkcji zapisz, jeśli tylko nazwy plików wię pokryją.
+Program nadpisze też notatki w pliku, po skorzystaniu z funkcji zapisz,
+jeśli tylko nazwy plików wię pokryją.
+Tak, program jest naiwny. Powstał zaraz po ukończeniu pierwszego kursu Pythona.
+Program miał na celu głównie przećwiczenie pętli i kontroli flow programu.
 
 ASCI ART pochodzi z http://textart4u.blogspot.com/

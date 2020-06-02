@@ -11,7 +11,7 @@
 <ul>
     {% for user in lista_osob -%}
     <li>
-        <a href="/osoba/{{ user['id'] }}">{{ user['imie'] }} {{ user['nazwisko'] }}</a>
+        <a href="/osoba/{{ user['id'] }}">{{ user['imie'][0] }}. {{ user['nazwisko'] }}</a>
         {% if user['is_admin'] %}
         <b>[ADMIN]</b>
         {% endif %}

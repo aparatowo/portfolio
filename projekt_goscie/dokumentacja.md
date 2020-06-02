@@ -3,6 +3,11 @@
 ###Środowisko
 Python 3.7, kodowanie UTF-8, wykorzystane moduły: math, random, json i copy
 
+#|UWAGA|
+Program został dopracowany i doczekał się swojej wersji napisanej w frameworku Flask.
+Aby zobaczyć wersję działającą, z nieco zmienioną i dopracowaną logiką losowania,
+zapraszam na stronę http://aparatowo.pythonanywhere.com
+
 ###Założenia programu
 Program ma za zadanie przyjąć listę gosci weselnych i przetworzyć tak, by uzyskać jak największe zadowolenie wszystkich zaproszonych.
 Dzieli listy na gości z osobą towarzyszącą i te samotne, dokonuje podziału na stoliki i informuje o łącznej liczbie dzieci.

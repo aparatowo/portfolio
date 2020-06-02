@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if theme %}
+    <link rel="stylesheet" type="text/css" href="static/{{ theme }}_theme.css">
+    {% else %}
+    <link rel="stylesheet" type="text/css" href="static/light_theme.css">
+    {% endif %}
+</head>
+<body>
+
+<h1>Moja strona</h1>
+<p> Wybierz motyw strony:
+    <a href="/set_theme?theme=dark">ciemny</a>,
+    <a href="/set_theme?theme=light">jasny</a>
+</p>
+
+<p>
+    Psst... jesteś na tej stronie już {{ visit_count }} raz :)
+</p>
+
+<footer>Strona używa technologii cookies.</footer>
+</body>
+
+</html>

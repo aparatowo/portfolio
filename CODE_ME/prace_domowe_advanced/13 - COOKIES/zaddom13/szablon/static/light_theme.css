@@ -1,0 +1,11 @@
+body {
+	background: white;
+	color: #555;
+}
+
+footer {
+	background: lightgreen;
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+}
